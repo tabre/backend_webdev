@@ -26,7 +26,7 @@ RUN mkdir /www
 RUN ln -s /www /opt/lampp/htdocs/
 
 # SSH server
-RUN apt-get install -y -q supervisor openssh-server
+RUN apt install -y -q supervisor openssh-server
 RUN mkdir -p /var/run/sshd
 
 # Output supervisor config file to start openssh-server
