@@ -1,0 +1,4 @@
+#!/bin/bash
+docker stop xampp
+docker rm xampp
+docker run --name xampp -p 8022:22 -p 8080:80 -d -v /home/tabre/repos/backend_webdev/$1:/www xampp
