@@ -1,3 +1,15 @@
 [submodule "inf653_php_practice01"]
     path = inf653_php_practice01
     url = git@github.com:tabre/inf653_php_practice01.git
+
+[submodule "inf653_php_practice02"]
+    path = inf653_php_practice02
+    url = git@github.com:tabre/inf653_php_practice02.git
+
+[submodule "inf653_php_practice04"]
+    path = inf653_php_practice04
+    url = git@github.com:tabre/inf653_php_practice04.git
+
+[submodule "inf653_php_practice05"]
+    path = inf653_php_practice05
+    url = git@github.com:tabre/inf653_php_practice05.git
