@@ -1,0 +1,3 @@
+[submodule "inf653_php_practice01"]
+    path = inf653_php_practice01
+    url = git@github.com:tabre/inf653_php_practice01.git
