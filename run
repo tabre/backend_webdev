@@ -1,5 +1,5 @@
 #!/bin/bash
 docker stop xampp
 docker rm xampp
-docker run --name xampp -p 8022:22 -p 8080:80 -d -v /home/tabre/repos/backend_webdev/$1:/www xampp
+docker run --name xampp -p 8022:22 -p 8080:80 -d -v $(pwd)/$1:/www xampp
 gtk-launch $(xdg-settings get default-web-browser) http://localhost:8080/www &
