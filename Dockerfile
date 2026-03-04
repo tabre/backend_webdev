@@ -7,7 +7,7 @@ RUN apt upgrade
 
 RUN apt -y install curl net-tools
 
-RUN curl -o xampp-linux-installer.run "https://cytranet.dl.sourceforge.net/project/xampp/XAMPP%20Linux/8.2.12/xampp-linux-x64-8.2.12-0-installer.run?viasf=1"
+RUN curl -o xampp-linux-installer.run "https://cytranet-dal.dl.sourceforge.net/project/xampp/XAMPP%20Linux/8.2.4/xampp-linux-x64-8.2.4-0-installer.run?viasf=1"
 RUN chmod +x xampp-linux-installer.run
 RUN bash -c './xampp-linux-installer.run'
 
