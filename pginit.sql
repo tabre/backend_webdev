@@ -1,9 +1,5 @@
-GRANT ALL PRIVILEGES ON DATABASE backend_webdev TO pgadmin;
+GRANT ALL PRIVILEGES ON DATABASE quotesdb TO pgadmin;
 
-\c backend_webdev
+\c quotesdb
 
 GRANT ALL ON SCHEMA public TO pgadmin;
-
-CREATE TABLE public.test_table (
-	field varchar NULL
-);
