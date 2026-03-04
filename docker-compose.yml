@@ -4,7 +4,7 @@ services:
     environment:
         POSTGRES_USER: ${POSTGRES_USER}
         POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-        POSTGRES_DB: backend_webdev
+        POSTGRES_DB: ${POSTGRES_DB}
     volumes:
         # - ./data:/var/lib/postgresql/data
         - ./pginit.sql:/docker-entrypoint-initdb.d/init.sql
@@ -18,8 +18,9 @@ services:
     build: .
     image: xampp
     volumes:
-      - ./${ACTIVE_PROJECT}:/www
+      - ./${ACTIVE_PROJECT}:/${XAMPP_DEPLOYMENT_DIR}
       - ./lampp/etc/php.ini:/opt/lampp/etc/php.ini
+      - ./lampp/apache2/conf/httpd.conf:/opt/lampp/apache2/conf/httpd.conf
     networks:
       v0:
         ipv4_address: 10.0.55.10
