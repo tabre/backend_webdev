@@ -25,6 +25,9 @@ RUN mkdir /opt/lampp/apache2/conf.d && \
 RUN mkdir /www
 RUN ln -s /www /opt/lampp/htdocs/
 
+RUN mkdir /api
+RUN ln -s /api /opt/lampp/htdocs/
+
 # SSH server
 RUN apt install -y -q supervisor openssh-server
 RUN mkdir -p /var/run/sshd
