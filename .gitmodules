@@ -13,3 +13,7 @@
 [submodule "inf653_php_practice05"]
     path = inf653_php_practice05
     url = git@github.com:tabre/inf653_php_practice05.git
+
+[submodule "inf653_php_midterm"]
+	path = inf653_php_midterm
+	url = git@github.com:tabre/inf653_php_midterm.git
